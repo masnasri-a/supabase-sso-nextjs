@@ -73,7 +73,7 @@ export default function Home() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "github",
       options: {
-        redirectTo: "/profile",
+        redirectTo: "https://supabase-sso-nextjs.vercel.app/profile",
       },
     });
     if (error) {
