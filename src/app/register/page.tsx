@@ -28,7 +28,7 @@ export default function Home() {
       email: email,
       password: password,
       options: {
-        emailRedirectTo: "http://localhost:3000/",
+        emailRedirectTo: "/login",
       },
     });
     console.log(data, error);

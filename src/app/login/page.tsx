@@ -73,7 +73,7 @@ export default function Home() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "github",
       options: {
-        redirectTo: "http://localhost:3000/profile",
+        redirectTo: "/profile",
       },
     });
     if (error) {
