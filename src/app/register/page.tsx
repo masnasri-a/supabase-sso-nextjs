@@ -32,12 +32,9 @@ export default function Home() {
       },
     });
     console.log(data, error);
-    const errorMessage = error?.message;
     toast({
-      title: "Failed Login",
-      variant: "destructive",
-      description: errorMessage,
-      action: <ToastAction altText="Try again">Try again</ToastAction>,
+      title: "Please Check Email to Validate Account",
+      variant: "default",
     });
     setTimeout(() => {
       setIsLoading(false);
